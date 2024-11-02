@@ -15,18 +15,18 @@ demonstrated that the proposed FourierTMamba significantly outperforms state-of-
 
 
 ## Results (FourierTMamba)
-Performance results of the FourierTMamba trained on paired dataset
+# Performance results of the FourierTMamba trained on paired dataset
 <summary><strong>LOL</strong> </summary>
 <img src = "fig/LOL.png"> 
 
 <summary><strong>ViLSRW</strong></summary>
 <img src = "fig/LSRW.png"> 
 
-Performance results of the FourierTMamba trained on paired dataset
+# Performance results of the FourierTMamba trained on paired dataset
 <summary><strong>Visual Results</strong></summary>
 <img src = "fig/unpaired.png"> 
 
-### Install dependencies.
+### 1.Install dependencies.
 
 ```python
 pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/rocm5.4.2
