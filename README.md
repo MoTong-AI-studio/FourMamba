@@ -26,12 +26,22 @@ Performance results of the FourierTMamba trained on paired dataset
 <summary><strong>Visual Results</strong></summary>
 <img src = "fig/unpaired.png"> 
 
-## Installation
-The project is built with Python 3.8, PyTorch 1.8.1. CUDA 10.2, cuDNN 7.6.5
-~~~
-pip install -r requirements.txt
-~~~
+### Install dependencies.
 
+```python
+pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/rocm5.4.2
+pip install packaging
+pip install timm==0.4.12
+pip install pytest chardet yacs termcolor
+pip install submitit tensorboardX
+pip install triton==2.0.0
+pip install causal_conv1d==1.0.0
+pip install mamba_ssm==1.0.1
+pip install scikit-learn matplotlib thop h5py SimpleITK scikit-image medpy
+pip install opencv-python joblib natsort tqdm tensorboard
+pip install einops gdown addict future lmdb numpy pyyaml requests scipy yapf lpips
+pip install fvcore
+```
 ## 2. Prepare Dataset
 Download the following datasets:
 
