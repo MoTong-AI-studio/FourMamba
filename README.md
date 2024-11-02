@@ -55,7 +55,7 @@ LSRW dataset [[Baiduyun (extracted code: wmrr)]](https://pan.baidu.com/s/1XHWQAS
 Please refer to [[Project Page of RetinexNet]](https://daooshee.github.io/BMVC2018website/).
 
 ## How to train?
-For example:trianing on LOL-v1 dataset
+For example training on LOL-v1 datasets
 ```
 python3 basicsr/train.py --opt Options/FourierTMamba_LOL_v1.yml
 ```
