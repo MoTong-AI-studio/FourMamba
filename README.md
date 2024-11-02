@@ -31,3 +31,25 @@ The project is built with Python 3.8, PyTorch 1.8.1. CUDA 10.2, cuDNN 7.6.5
 ~~~
 pip install -r requirements.txt
 ~~~
+
+## 2. Prepare Dataset
+Download the following datasets:
+
+LOL-v1 [Baidu Disk](https://pan.baidu.com/s/1ZAC9TWR-YeuLIkWs3L7z4g?pwd=cyh2) (code: `cyh2`), [Google Drive](https://drive.google.com/file/d/1L-kqSQyrmMueBh_ziWoPFhfsAh50h20H/view?usp=sharing)
+
+LOL-v2 [Baidu Disk](https://pan.baidu.com/s/1X4HykuVL_1WyB3LWJJhBQg?pwd=cyh2) (code: `cyh2`), [Google Drive](https://drive.google.com/file/d/1Ou9EljYZW8o5dbDCf9R34FS8Pd8kEp2U/view?usp=sharing)
+
+LSRW dataset [[Baiduyun (extracted code: wmrr)]](https://pan.baidu.com/s/1XHWQAS0ZNrnCyZ-bq7MKvA)
+
+### Unpaired datasets 
+Please refer to [[Project Page of RetinexNet]](https://daooshee.github.io/BMVC2018website/).
+
+## How to train?
+For example:trianing on LOL-v1 dataset
+```
+python3 basicsr/train.py --opt Options/FourierTMamba_LOL_v1.yml
+```
+
+## How to test?
+```
+python3 Enhancement/test_from_dataset.py --opt Options/FourierTMamba_LOL_v1.yml --weights pretrained_weights/LOL_v1.pth --dataset LOL_v1
