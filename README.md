@@ -53,3 +53,12 @@ python3 basicsr/train.py --opt Options/FourierTMamba_LOL_v1.yml
 ## How to test?
 ```
 python3 Enhancement/test_from_dataset.py --opt Options/FourierTMamba_LOL_v1.yml --weights pretrained_weights/LOL_v1.pth --dataset LOL_v1
+
+## Acknowledgement
+We thank the following article and the authors for their open-source codes.This repo is based on [Retinexformer ](https://github.com/caiyuanhao1998/Retinexformer) (ICCV 2023).
+@inproceedings{Retinexformer,
+  title={Retinexformer: One-stage Retinex-based Transformer for Low-light Image Enhancement},
+  author={Yuanhao Cai and Hao Bian and Jing Lin and Haoqian Wang and Radu Timofte and Yulun Zhang},
+  booktitle={ICCV},
+  year={2023}
+}
